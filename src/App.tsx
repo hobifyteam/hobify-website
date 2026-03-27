@@ -18,6 +18,7 @@ import {
   MessageCircle
 } from "lucide-react";
 import { useState } from "react";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const USER_FORM_URL = "https://airtable.com/appWZJDYQJrjqjcvb/pagdJlz9MKjyD9sMv/form";
 const BUSINESS_FORM_URL = "https://airtable.com/appWZJDYQJrjqjcvb/pag6nDrvwp9yh7cWI/form";
@@ -448,6 +449,7 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <SpeedInsights />
     </div>
   );
 }
