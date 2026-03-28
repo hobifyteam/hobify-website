@@ -18,11 +18,19 @@ import {
   MessageCircle
 } from "lucide-react";
 import { useState } from "react";
-import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const USER_FORM_URL = "https://airtable.com/appWZJDYQJrjqjcvb/pagdJlz9MKjyD9sMv/form";
 const BUSINESS_FORM_URL = "https://airtable.com/appWZJDYQJrjqjcvb/pag6nDrvwp9yh7cWI/form";
 const WHATSAPP_URL = "https://chat.whatsapp.com/HKLAB88gw8FAd2UwifsxMS?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnfWcJBP-vssw7UQM7GFo0U0ZunV8KaSv9yVjoUbwt2JNEt25ia6-r9EgakBU_aem_pA9Vr0c6oR5tG-Isf7qheQ";
+
+const HobifyLogo = ({ className = "h-10" }: { className?: string }) => (
+  <img 
+    src="/hobify-icon.svg.png" 
+    alt="Hobify Logo" 
+    className={`object-contain ${className}`}
+    referrerPolicy="no-referrer"
+  />
+);
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,10 +49,13 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md border-b border-ink/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div 
-            className="text-2xl font-display font-extrabold text-brand cursor-pointer"
+            className="flex items-center gap-2 cursor-pointer group"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            Hobify
+            {/* Logo Placeholder - User should upload their logo to /src/logo.png */}
+            <div className="h-10 flex items-center">
+              <HobifyLogo />
+            </div>
           </div>
           
           {/* Desktop Nav */}
@@ -399,7 +410,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-12 mb-20">
             <div className="col-span-2">
-              <div className="text-3xl font-display font-black text-brand mb-6">Hobify</div>
+              <HobifyLogo className="h-12 mb-6" />
               <p className="text-ink-muted max-w-sm leading-relaxed">
                 Helping people discover and join hobbies in real life. 
                 Meet new people, try new things, and improve your lifestyle.
@@ -449,7 +460,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-      <SpeedInsights />
     </div>
   );
 }

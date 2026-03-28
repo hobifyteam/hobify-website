@@ -9,8 +9,8 @@
   --color-brand-dark: #00a846;
   --color-accent: #007aff;
   --color-surface: #FDFCFB;
-  --color-ink: #1A1A1A;
-  --color-ink-muted: #666666;
+  --color-ink: #121212;
+  --color-ink-muted: #555555;
 }
 
 @layer base {
