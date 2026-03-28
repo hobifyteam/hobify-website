@@ -25,7 +25,7 @@ const WHATSAPP_URL = "https://chat.whatsapp.com/HKLAB88gw8FAd2UwifsxMS?utm_sourc
 
 const HobifyLogo = ({ className = "h-10" }: { className?: string }) => (
   <img 
-    src="/hobify-icon.svg.png" 
+    src="/Hobify_LOGO_PNG.png" 
     alt="Hobify Logo" 
     className={`object-contain ${className}`}
     referrerPolicy="no-referrer"
