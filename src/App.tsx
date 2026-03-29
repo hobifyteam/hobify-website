@@ -29,7 +29,6 @@ const HobifyLogo = ({ className = "h-10" }: { className?: string }) => (
     src={logo} 
     alt="Hobify Logo" 
     className={`object-contain ${className}`}
-    referrerPolicy="no-referrer"
   />
 );
 
