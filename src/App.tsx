@@ -18,7 +18,7 @@ import {
   MessageCircle
 } from "lucide-react";
 import { useState } from "react";
-import logo from "./assets/Hobify_LOGO_PNG.png";
+import logo from "./assets/logo.svg";
 
 const USER_FORM_URL = "https://airtable.com/appWZJDYQJrjqjcvb/pagdJlz9MKjyD9sMv/form";
 const BUSINESS_FORM_URL = "https://airtable.com/appWZJDYQJrjqjcvb/pag6nDrvwp9yh7cWI/form";
